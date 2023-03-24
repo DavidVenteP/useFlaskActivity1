@@ -1,16 +1,10 @@
 from typing import List, Dict
 from flask import Flask, render_template
 
-from data import Articles
-
 app = Flask(__name__,
             static_url_path='',
             static_folder='static',
             template_folder='templates')
-
-def my_articles() -> List[Dict]:
-    articles = Articles()
-    return articles
 
 @app.route('/')
 def index():
