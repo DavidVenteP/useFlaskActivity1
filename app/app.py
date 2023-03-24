@@ -1,6 +1,5 @@
 from typing import List, Dict
-from flask import Flask, render_template, send_from_directory
-import json
+from flask import Flask, render_template
 
 from data import Articles
 
